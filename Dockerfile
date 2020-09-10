@@ -6,7 +6,7 @@
 FROM python:3.7-slim
 
 ENV GOOGLE_APPLICATION_CREDENTIALS "/service_account.json"
-ENV BUCKET_NAME minsoojunprj-urlsigner
+ENV BUCKET_NAME [[ REPLACE IT TO YOUR BUCKET NAME]]
 # Copy local code to the container image.
 
 COPY . /
