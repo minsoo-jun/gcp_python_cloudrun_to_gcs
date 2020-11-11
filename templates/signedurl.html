@@ -20,7 +20,7 @@
     <input type="file" id="selector">
   </div>
 
-  <input class="mdl-button mdl-button--raised mdl-button--colored" type="button" value="ファイル アップロード"
+  <input class="mdl-button mdl-button--raised mdl-button--colored" type="button" value="File upload"
     onclick="generateSignedURL()">
   <br />
 
@@ -76,7 +76,7 @@
     }
 
     function uploadFile(file) {
-      $("#status").html('開始...')
+      $("#status").html('Start...')
       url = c
       fetch(url, {
         method: 'PUT',
@@ -85,7 +85,7 @@
         .then(response => response.text())
         .catch(error => $("#status").html(error)
         )
-        .then(response => $("#status").html('ファイル アップロード成功: ' + filename));
+        .then(response => $("#status").html('File upload successful: ' + filename));
     }
 
   </script>
